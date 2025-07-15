@@ -16,12 +16,12 @@ const MovieDetail = () => {
 
   useEffect(() => {
     const fetchMovie = async () => {
-      const res = await axios.get(`http://localhost:8080/movies/${id}`);
+      const res = await axios.get(`https://api.boss-team.site/movies/${id}`);
       setMovie(res.data.data);
     };
 
     const fetchReviews = async () => {
-      const res = await axios.get(`http://localhost:8080/movies/${id}/review`);
+      const res = await axios.get(`https://api.boss-team.site/movies/${id}/review`);
       setReviews(res.data.reviews);
     };
 

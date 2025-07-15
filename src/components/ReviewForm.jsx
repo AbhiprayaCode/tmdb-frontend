@@ -14,12 +14,12 @@ const ReviewForm = ({ movieId, userId, reviewToEdit, onSuccess }) => {
     try {
       if (editing) {
         await axios.put(
-          `http://localhost:8080/movies/${movieId}/review/${reviewToEdit._id}`,
+          `https://api.boss-team.site/movies/${movieId}/review/${reviewToEdit._id}`,
           { comment, rating, user: user?._id }
         );
       } else {
         await axios.post(
-          `http://localhost:8080/movies/${movieId}/review`,
+          `https://api.boss-team.site/movies/${movieId}/review`,
           { comment, rating, user: user?._id }
         );
       }

@@ -8,7 +8,7 @@ export const AuthProvider = ({ children }) => {
   
   const fetchUser = async () => {
   try {
-    const res = await axios.get('http://localhost:8080/auth/current_user', {
+    const res = await axios.get('https://api.boss-team.site/auth/current_user', {
       withCredentials: true,
     });
     console.log('[fetchUser] Authenticated user:', res.data.user);
@@ -21,7 +21,7 @@ export const AuthProvider = ({ children }) => {
 
 const logout = async () => {
   try {
-    await axios.post('http://localhost:8080/auth/logout', {}, { withCredentials: true });
+    await axios.post('https://api.boss-team.site/auth/logout', {}, { withCredentials: true });
     console.log('[logout] Logged out successfully');
     setUser(null);
     window.location.reload();

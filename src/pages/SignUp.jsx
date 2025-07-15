@@ -10,7 +10,7 @@ const Signup = () => {
   const handleSignup = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:8080/auth/signup', form, {
+      await axios.post('https://api.boss-team.site/auth/signup', form, {
         withCredentials: true,
       });
       toast.success('Signup successful! Check your email to verify your account.');

@@ -14,7 +14,7 @@ const Login = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:8080/auth/login', form, {
+      await axios.post('https://api.boss-team.site/auth/login', form, {
         withCredentials: true,
       });
       await fetchUser();

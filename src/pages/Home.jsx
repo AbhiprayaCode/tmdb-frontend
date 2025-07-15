@@ -15,7 +15,7 @@ const Home = () => {
   const fetchMovies = async () => {
     try {
       setLoading(true);
-      const res = await axios.get('http://localhost:8080/movies', {
+      const res = await axios.get('https://api.boss-team.site/movies', {
         params: { keyword, page, pageSize: 10 },
       });
       setMovies(res.data.data);

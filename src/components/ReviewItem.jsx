@@ -40,7 +40,7 @@ const ReviewItem = ({ review, movieId, userId, onChange }) => {
   const handleDelete = async () => {
     try {
       await confirmDelete();
-      await axios.delete(`http://localhost:8080/movies/${movieId}/review/${review._id}`);
+      await axios.delete(`https://api.boss-team.site/movies/${movieId}/review/${review._id}`);
       toast.success('Review deleted!');
       onChange();
     } catch (err) {
