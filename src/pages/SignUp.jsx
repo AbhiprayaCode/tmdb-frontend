@@ -62,7 +62,7 @@ const Signup = () => {
 
         <div className="mt-6">
           <a
-            href="http://localhost:8080/auth/login/google"
+            href="https://api.boss-team.site/auth/login/google"
             className="flex items-center justify-center w-full bg-white text-black font-medium px-4 py-2 rounded-md hover:bg-zinc-100 transition duration-200"
           >
             <FcGoogle className="text-xl mr-2" />

@@ -79,7 +79,7 @@ const Login = () => {
 
         <div className="text-center">
           <a
-            href="http://localhost:8080/auth/login/google"
+            href="https://api.boss-team.site/auth/login/google"
             className="flex justify-center items-center gap-2 bg-white hover:bg-zinc-100 text-black font-medium py-2 px-4 rounded-md transition duration-200"
           >
             <FcGoogle className="text-xl mr-2" />
